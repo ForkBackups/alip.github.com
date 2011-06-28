@@ -1,0 +1,33 @@
+# alip.github.com's .gitignore
+
+# Normal rules
+.*
+*.o
+*.o.*
+*.a
+*.s
+*.ko
+*.so
+*.so.dbg
+*.gcno
+
+# git files that we don't want to ignore even it they are dot-files
+!.gitignore
+!.mailmap
+
+# backup files
+*.orig
+*~
+\#*#
+.*.swp
+
+# tidy logs
+tidy.log
+
+# generated files
+#/_includes/cookie.html
+#/_includes/cloud-en.html
+#/_includes/cloud-tr.html
+#/en/tags
+#/tr/tags
+/_site

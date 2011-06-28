@@ -1,0 +1,299 @@
+---
+layout: nil
+---
+/* vim: set fdm=marker fmr=@group,@end : */
+
+/*
+ * screen.css for alip.github.com
+ * Copyright 2009, 2010, 2011, 2012 Ali Polatel <polatel@gmail.com>
+ */
+
+/* @group reset */
+body {
+  margin: 0px;
+  background-color: #fff;
+}
+
+html {
+  font-family: 'OFL Sorts Mill Goudy', 'OFL Sorts Mill Goudy TT', Georgia, serif;
+  font-size: 0.8em;
+  line-height: 1.2em;
+  text-align: justify;
+}
+/* @end */
+/* @group basic */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  clear: left;
+}
+
+h1 {
+  font-size: 2.25em;
+  line-height: 120%;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.3em;
+  margin: 1em 0 0.5em 0;
+}
+
+h4 {
+  font-size: 0.9em;
+  font-weight: 500;
+  margin-bottom: 0.8em;
+}
+
+a,
+a:visited,
+a:link,
+a:active {
+  color: #3d3d3d;
+  border-bottom: 1px dotted #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  border-bottom: none;
+}
+
+ul li {
+  margin-bottom: 0.3em;
+}
+
+ul.horizontal {
+  list-style-type: none;
+}
+
+ul.horizontal li {
+  display: inline;
+}
+
+th {
+  text-align: left;
+}
+
+tt {
+  color: #022355;
+  white-space: nowrap;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+code,
+pre {
+  font-family: 'Inconsolata', monospace;
+  line-height: 1.3;
+  font-size: inherit;
+}
+
+blockquote {
+  display: block;
+  font-size: 1em;
+  /* font-style: italic; */
+  margin: 1em 3em;
+  padding-left: 1em;
+  border-left: 4px dashed #ccc;
+}
+/* @end */
+/* @group cloud */
+div#htmltagcloud {
+  padding: 2px;
+  position: relative;
+  vertical-align: middle;
+}
+
+div#htmltagcloud a {
+  border: none;
+  font-family: "Arial", "Helvetica", "Nimbus Sans L", sans-serif;
+  line-height: 1.3em;
+  text-align: center;
+  text-decoration: none;
+}
+
+span.tagcloud0  { font-size: 12px; }
+span.tagcloud1  { font-size: 13px; }
+span.tagcloud2  { font-size: 14px; }
+span.tagcloud3  { font-size: 15px; }
+span.tagcloud4  { font-size: 16px; }
+span.tagcloud5  { font-size: 17px; }
+span.tagcloud6  { font-size: 18px; }
+span.tagcloud7  { font-size: 19px; }
+span.tagcloud8  { font-size: 20px; }
+span.tagcloud9  { font-size: 21px; }
+span.tagcloud10 { font-size: 23px; }
+span.tagcloud11 { font-size: 25px; }
+span.tagcloud12 { font-size: 27px; }
+span.tagcloud13 { font-size: 29px; }
+span.tagcloud14 { font-size: 31px; }
+span.tagcloud15 { font-size: 33px; }
+/* @end */
+/* @group blog */
+table#blog {
+  background: transparent url("{{ site.url }}/images/separators/horizontal.png") bottom repeat-x;
+  margin-bottom: 1.0em;
+  padding-bottom: 0.5em;
+}
+
+table#blog td.entry_date,
+table#blog td.entry_title a {
+  border: none;
+  text-decoration: none;
+}
+/* @end */
+/* @group containers */
+div#container {
+  padding-bottom: 20px;
+}
+
+div#footer {
+  clear: both;
+  text-align: center;
+  height: 30px;
+  line-height: 0.1em;
+  padding-top: 20px;
+}
+
+div#header {
+  height: 25px;
+  margin-bottom: 5px;
+  border-bottom: 1px dashed #000;
+}
+
+div#header ul {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+div#header a,
+div#footer a {
+  border-bottom: none;
+  font-weight: bold;
+  font-family: "Arial", "Tahoma", "Verdana";
+}
+
+div#header li#lang a,
+div#header li#lang_other a {
+  font-size: 95%;
+}
+
+div#header li#lang {
+  margin-right: 0.8em;
+}
+
+div#header li#lang a {
+  color: green;
+}
+
+div#menu {
+  float: right;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  width: 20%;
+}
+
+div#menu h1 {
+  font-size: 1.2em;
+}
+
+div#main-column {
+  width: 70%;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  float: left;
+  clear: both;
+}
+
+div#left-column {
+  width: 40%;
+  float: left;
+  clear: both;
+  margin-left: 1em;
+}
+
+div#right-column {
+  width: 32%;
+  margin-right: 0.2em;
+  padding-right: 0.4em;
+  float: right;
+}
+/* @end */
+/* @group posts */
+.blog_entry,
+#post {
+  font-size: 1.2em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.1em;
+  margin-right: 10px;
+}
+
+.blog_meta,
+#post_meta {
+  margin-top: 1.2em;
+  line-height: 0.9em;
+}
+
+
+.tag a {
+  border: 1px dotted black;
+  padding: 1px;
+  margin-left: 5px;
+}
+/* @end */
+/* @group /motd */
+body#motd {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+body#motd li {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+body#motd li a {
+  font-size: 3em;
+}
+/* @end */
+/* @group / */
+img#me {
+  padding: 2px;
+  border: 1px dashed #000000;
+}
+
+a#rss {
+  padding-right: 2px;
+  border: none;
+  text-decoration: none;
+}
+
+p#hello {
+  padding-left: 5px;
+  padding-right: 30px;
+}
+
+pre.geekcode,
+p.git {
+  text-align: left;
+  border: none;
+  margin-top: 1em;
+}
+
+pre.geekcode,
+pre.git {
+  font-size: 90%;
+  white-space: normal;
+}
+/* @end */

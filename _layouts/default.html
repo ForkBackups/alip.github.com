@@ -1,0 +1,35 @@
+---
+layout: bare
+---
+
+<div id="header">
+  <ul class="horizontal">
+    {% case page.lang %}
+    {% when 'tr' %}
+      <li class="lang_other"><a href="{{ site.url }}/en/">en</a></li>
+      <li id="lang"><a href="{{ site.url }}/tr/">tr</a> &raquo;</li>
+      <li><a href="{{ site.url }}/tr/">Hakkımda</a></li>
+      <li><a href="{{ site.url }}/tr/blog/">Günlük</a></li>
+      <li><a href="{{ site.url }}/tr/projects/">Projeler</a></li>
+    {% else %}
+      <li class="lang_other"><a href="{{ site.url }}/tr/">tr</a></li>
+      <li id="lang"><a href="{{ site.url }}/en/">en</a> &raquo;</li>
+      <li><a href="{{ site.url }}/en/">Home</a></li>
+      <li><a href="{{ site.url }}/en/blog/">Blog</a></li>
+      <li><a href="{{ site.url }}/en/projects/">Projects</a></li>
+    {% endcase %}
+  </ul>
+  {% include github-ribbon.html %}
+</div>
+
+<div id="container">
+  <div id="content">
+    {{ content }}
+  </div>
+
+  <div style='clear:both;'></div>
+</div>
+
+<div id="footer">
+  {% include footer.html %}
+</div>
